@@ -4,6 +4,15 @@ import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 
 const App = Ember.Application.extend({
+  engines: {
+    inrepoengines: {
+      dependencies: {
+        externalRoutes: {
+          approute: 'approute'
+        }
+      }
+    },
+  },
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
   Resolver

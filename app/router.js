@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('sun');
+  this.route('approute');
   this.mount('inrepoengines');
 });
 
